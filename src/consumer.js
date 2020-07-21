@@ -1,3 +1,3 @@
-const payableService = require('./services/payable.js')
+const { payableBrokerAdapter } = require('./adapters')
 
-payableService.readPayableBroker()
+payableBrokerAdapter.read()

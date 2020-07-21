@@ -1,6 +1,6 @@
-const brokerAdapter = require('./broker')
+const payableBrokerAdapter = require('./payable')
 const kafkaDriver = require('../drivers/kafka')
 
 module.exports = {
-  brokerAdapter: brokerAdapter(kafkaDriver),
+  payableBrokerAdapter: payableBrokerAdapter(kafkaDriver),
 }
